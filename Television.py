@@ -26,7 +26,7 @@ class TV:
         print(f"The volume for this TV is {tv.volume_level}")
     # method to set a new volume
     def set_volume(tv, new_volume):
-        tv.channel = new_volume
+        tv.volume_level = new_volume
     # method to channel up
     def channel_up(tv, channel_up):
         tv.channel += channel_up
@@ -35,6 +35,8 @@ class TV:
         tv.channel -= channel_down
     # method to volume up
     def volume_up(tv, volume_up):
-        tv.channel += volume_up
-    # method to volumw down
+        tv.volume_level += volume_up
+    # method to volume down
+    def volume_down(tv, volume_down):
+        tv.volume_level += volume_down
     # call function
