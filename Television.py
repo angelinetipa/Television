@@ -6,14 +6,16 @@ class TV:
         tv.volume_level = volume_level
         tv.on = on
 
-# method to turn om
-# method to turn off
-# method to get channel
-# method to set a new channel
-# method to get volume
-# method to set a new volume
-# method to channel up
-# method to channel down
-# method to volume up
-# method to volumw down
-# call function
+    # method to turn on
+    def turn_on(tv):
+        tv.on = True
+    # method to turn off
+    # method to get channel
+    # method to set a new channel
+    # method to get volume
+    # method to set a new volume
+    # method to channel up
+    # method to channel down
+    # method to volume up
+    # method to volumw down
+    # call function
