@@ -28,6 +28,8 @@ class TV:
     def set_volume(tv, new_volume):
         tv.channel = new_volume
     # method to channel up
+    def channel_up(tv, channel_up):
+        tv.channel += channel_up
     # method to channel down
     # method to volume up
     # method to volumw down
