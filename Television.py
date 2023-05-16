@@ -39,4 +39,6 @@ class TV:
     # method to volume down
     def volume_down(tv, volume_down):
         tv.volume_level += volume_down
-    # call function
+# call function object 1
+tv1 = TV(3, 15, True)
+tv2 = TV(7, 10, False)
