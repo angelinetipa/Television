@@ -31,6 +31,8 @@ class TV:
     def channel_up(tv, channel_up):
         tv.channel += channel_up
     # method to channel down
+    def channel_down(tv, channel_down):
+        tv.channel -= channel_down
     # method to volume up
     # method to volumw down
     # call function
