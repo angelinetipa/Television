@@ -12,13 +12,14 @@ class TV:
         tv.on = on
 
     # method to turn on
+    @property
     def turn_on(tv):
         tv.on = True
-        return "The TV is on!"
+        
     # method to turn off
     def turn_off(tv):
         tv.on = False
-        return "The TV is off!"
+        
     # method to get channel
     def get_channel(tv):
         return f"TV's current channel:  {tv.channel}"
