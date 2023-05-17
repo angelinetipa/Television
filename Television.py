@@ -7,6 +7,8 @@ class TV:
         if channel <= 0 and channel >= 121:
             raise ValueError(f"channel expected only 1 to 120, got {channel}")
         tv.volume_level = volume_level
+        if volume_level <= 0 and volume_level >= 8:
+            raise ValueError(f"channel expected only 1 to 7, got {volume_level}")
         tv.on = on
 
     # method to turn on
