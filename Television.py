@@ -3,9 +3,11 @@ class TV:
     # constructor channel, volume_level, on
     def __init__(tv, channel, volume_level, on):
         tv.channel = channel
+        # raise ValueError
+        if channel <= 0 and channel >= 121:
+            raise ValueError(f"channel expected only 1 to 120, got {channel}")
         tv.volume_level = volume_level
         tv.on = on
-
 
     # method to turn on
     def turn_on(tv):
@@ -39,6 +41,3 @@ class TV:
     # method to volume down
     def volume_down(tv, volume_down):
         tv.volume_level += volume_down
-# call function object 1
-tv1 = TV(3, 15, True)
-tv2 = TV(7, 10, False)
